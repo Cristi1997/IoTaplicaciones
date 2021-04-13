@@ -2,7 +2,7 @@ var cont=0;
 function estado() {
          //alert("clic");
         console.log("historial");
-        message = new Paho.MQTT.Message("sensordos");
+        message = new Paho.MQTT.Message("sensoruno");
         message.destinationName = "cfmachado.fie@unach.edu.ec/test1";
         client.send(message);
   
@@ -10,7 +10,7 @@ function estado() {
 function historial(){	
         //alert("clic");
         console.log("historial");
-        message = new Paho.MQTT.Message("sensoruno");
+        message = new Paho.MQTT.Message("sensordos");
         message.destinationName = "cfmachado.fie@unach.edu.ec/test2";
         client.send(message);
         //document.getElementById("sensor").innerHTML="led off";
