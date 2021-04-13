@@ -69,10 +69,10 @@ function historial(){
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
           historiales=message.payloadString;
-          if(historiales[0]=="1"){
+          if(historiales[0]=="0"){
               document.getElementById("hist1").innerHTML=historiales;  
           }
-          if(historiales[0]=="2"){
+          if(historiales[0]=="1"){
               document.getElementById("hist2").innerHTML=historiales;
           }
           
