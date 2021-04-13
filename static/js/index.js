@@ -3,7 +3,7 @@ function estado() {
          //alert("clic");
         console.log("historial");
         message = new Paho.MQTT.Message("sensoruno");
-        message.destinationName = "cfmachado.fie@unach.edu.ec/test1";
+        message.destinationName = "cfmachado.fie@unach.edu.ec/test2";
         client.send(message);
   
 }
