@@ -47,7 +47,7 @@ function historial(){
     console.log("Conectado...");
 	
     client.subscribe("cfmachado.fie@unach.edu.ec/test1");
-    client.subscribe("cfmachado.fie@unach.edu.ec/test2");
+    
     
 	
   }
