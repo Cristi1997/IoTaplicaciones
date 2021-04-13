@@ -2,7 +2,6 @@ var cont=0;
 function estado() {
          //alert("clic");
          
-        
         if(cont==1){
         console.log("OFF");
         //document.getElementById("sensor").innerHTML="CLICK";
@@ -30,7 +29,7 @@ function estado() {
 function historial(){	
         //alert("clic");
         console.log("historial");
-        message = new Paho.MQTT.Message("historial");
+        message = new Paho.MQTT.Message("sensoruno");
         message.destinationName = "cfmachado.fie@unach.edu.ec/test2";
         client.send(message);
         //document.getElementById("sensor").innerHTML="led off";
