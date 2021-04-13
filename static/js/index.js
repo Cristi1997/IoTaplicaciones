@@ -1,29 +1,10 @@
 var cont=0;
 function estado() {
          //alert("clic");
-         
-        if(cont==1){
-        console.log("OFF");
-        //document.getElementById("sensor").innerHTML="CLICK";
-        message = new Paho.MQTT.Message("OFF");
+        console.log("historial");
+        message = new Paho.MQTT.Message("sensordos");
         message.destinationName = "cfmachado.fie@unach.edu.ec/test1";
         client.send(message);
-        cont=2;
-         }
-	
-        if(cont==0){
-        console.log("ON");
-        //document.getElementById("sensor").innerHTML="CLICK";
-        message = new Paho.MQTT.Message("ON");
-        message.destinationName = "cfmachado.fie@unach.edu.ec/test1";
-        client.send(message);
-        cont=1;
-       
-         }
-	
-	if(cont==2){
-        cont=0;	
-        }
   
 }
 function historial(){	
