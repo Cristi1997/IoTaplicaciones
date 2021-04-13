@@ -1,17 +1,17 @@
 var cont=0;
 function estado() {
          //alert("clic");
-        console.log("historial");
+        console.log("sensoruno");
         message = new Paho.MQTT.Message("sensoruno");
-        message.destinationName = "cfmachado.fie@unach.edu.ec/test2";
+        message.destinationName = "cfmachado.fie@unach.edu.ec/test1";
         client.send(message);
   
 }
 function historial(){	
         //alert("clic");
-        console.log("historial");
+        console.log("sensordos");
         message = new Paho.MQTT.Message("sensordos");
-        message.destinationName = "cfmachado.fie@unach.edu.ec/test2";
+        message.destinationName = "cfmachado.fie@unach.edu.ec/test1";
         client.send(message);
         //document.getElementById("sensor").innerHTML="led off";
 }
@@ -68,18 +68,12 @@ function historial(){
   // called when a message arrives
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
-          msm=message.payloadString;
-          if(msm=="ON"){
-              document.getElementById("sensor1").innerHTML=msm;  
+          historiales=message.payloadString;
+          if(historiales[0]=="1"){
+              document.getElementById("hist1").innerHTML=historiales;  
           }
-          if(msm=="OFF"){
-              document.getElementById("sensor1").innerHTML=msm;
+          if(historiales[0]=="2"){
+              document.getElementById("hist2").innerHTML=historiales;
           }
-          if(msm[0]=="1"){
           
-          	
-      document.getElementById("sensor2").innerHTML=msm; 	
-          	  
-          }
-	  
   }
