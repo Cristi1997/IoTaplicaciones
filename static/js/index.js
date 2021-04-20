@@ -4,7 +4,7 @@ function historial(){
         //alert("clic");
         console.log("HISTORIAL");
         message = new Paho.MQTT.Message("historial");
-        message.destinationName = "cfmachado.fie@unach.edu.ec/test1";
+        message.destinationName = "cfmachado.fie@unach.edu.ec/test2";
         client.send(message);
         //document.getElementById("sensor").innerHTML="led off";
 }
