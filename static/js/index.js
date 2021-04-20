@@ -70,7 +70,7 @@ function historial(){
     console.log("onMessageArrived:"+message.payloadString);
           historiales=message.payloadString;
           if(historiales[0]=="0"){
-              document.getElementById("hist1").innerHTML=historiales;  
+              document.getElementById("est").innerHTML=historiales;  
           }
           if(historiales[0]=="1"){
               document.getElementById("hist2").innerHTML=historiales;
