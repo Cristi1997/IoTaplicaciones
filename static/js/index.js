@@ -10,7 +10,7 @@ function estado() {
 function historial(){	
         //alert("clic");
         console.log("sensordos");
-        message = new Paho.MQTT.Message("sensordos");
+        message = new Paho.MQTT.Message("historial");
         message.destinationName = "cfmachado.fie@unach.edu.ec/test1";
         client.send(message);
         //document.getElementById("sensor").innerHTML="led off";
