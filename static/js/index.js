@@ -68,17 +68,17 @@ function historial(){
           if(historiales[0]=="2"){
               document.getElementById("hist2").innerHTML=historiales;
           }
-	  if(historiales=="SEN1-ON")
+	  if(historiales=="SEN1-ON"){
               document.getElementById("est1").innerHTML=historiales;
           }
- if(historiales=="SEN1-OFF")
+ if(historiales=="SEN1-OFF"){
               document.getElementById("est1").innerHTML=historiales;
           }
 	  
-	  if(historiales=="SEN2-ON")
+	  if(historiales=="SEN2-ON"){
               document.getElementById("est1").innerHTML=historiales;
           }
- if(historiales=="SEN2-OFF")
+ if(historiales=="SEN2-OFF"){
               document.getElementById("est1").innerHTML=historiales;
           }
           
