@@ -39,9 +39,10 @@ function historial(){
     // Once a connection has been made, make a subscription and send a message.
     console.log("Conectado...");
 	
-    client.subscribe("cfmachado.fie@unach.edu.ec/test1");
-    
+      
     client.subscribe("cfmachado.fie@unach.edu.ec/test2");
+client.subscribe("cfmachado.fie@unach.edu.ec/test1");  
+	  
 	
   }
 
