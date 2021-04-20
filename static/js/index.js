@@ -76,10 +76,10 @@ function historial(){
           }
 	  
 	  if(historiales=="SEN2-ON"){
-              document.getElementById("est1").innerHTML=historiales;
+              document.getElementById("est2").innerHTML=historiales;
           }
  if(historiales=="SEN2-OFF"){
-              document.getElementById("est1").innerHTML=historiales;
+              document.getElementById("est2").innerHTML=historiales;
           }
           
   }
