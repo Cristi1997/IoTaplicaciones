@@ -4,8 +4,7 @@ function historial(){
         //alert("clic");
         console.log("HISTORIAL");
 	if(cc==0){
-              document.getElementById("est2").innerHTML=historiales;
-		message = new Paho.MQTT.Message("h");
+              	message = new Paho.MQTT.Message("h");
         message.destinationName = "cfmachado.fie@unach.edu.ec/test2";
         client.send(message);
 		cc++;
