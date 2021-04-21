@@ -3,7 +3,7 @@ var cc=0;
 function historial(){	
         //alert("clic");
         console.log("HISTORIAL");
-	if(historiales=="SEN2-ON"){
+	if(cc==0){
               document.getElementById("est2").innerHTML=historiales;
 		message = new Paho.MQTT.Message("h");
         message.destinationName = "cfmachado.fie@unach.edu.ec/test2";
