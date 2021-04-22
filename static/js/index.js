@@ -3,19 +3,11 @@ var cc=0;
 function historial(){	
         //alert("clic");
         console.log("HISTORIAL");
-	if(cc==0){
+	
               	message = new Paho.MQTT.Message("h");
         message.destinationName = "cfmachado.fie@unach.edu.ec/test2";
         client.send(message);
-		cc++;
-          }else{
-	  message = new Paho.MQTT.Message("h1");
-        message.destinationName = "cfmachado.fie@unach.edu.ec/test2";
-        client.send(message);
-		  cc=0;
-	  
-	  
-	  }
+		
         
         //document.getElementById("sensor").innerHTML="led off";
 }
