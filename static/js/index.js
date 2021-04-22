@@ -66,8 +66,12 @@ client.subscribe("cfmachado.fie@unach.edu.ec/test1");
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
           historiales=message.payloadString;
-          if(historiales[0]=="s"){
+          if(historiales[0]=="U"){
               document.getElementById("hist1").innerHTML=historiales;  
+          
+          }
+	   if(historiales[0]=="D"){
+              document.getElementById("hist2").innerHTML=historiales;  
           
           }
 	  if(historiales=="SEN1-ON"){
