@@ -66,11 +66,11 @@ client.subscribe("cfmachado.fie@unach.edu.ec/test1");
   function onMessageArrived(message) {
     console.log("onMessageArrived:"+message.payloadString);
           historiales=message.payloadString;
-          if(historiales[0]=="U"){
+          if(historiales[3]=="U"){
               document.getElementById("hist1").innerHTML=historiales;  
           
           }
-	   if(historiales[0]=="D"){
+	   if(historiales[3]=="D"){
               document.getElementById("hist2").innerHTML=historiales;  
           
           }
